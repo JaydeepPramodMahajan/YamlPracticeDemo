@@ -11,3 +11,5 @@ jobs:
     steps:
       - name: "Print Hello"
         run: echo "Hello"
+      - name: "Creating a directory"
+        run: mkdir "Random"
