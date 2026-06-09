@@ -26,5 +26,19 @@ jobs:
     steps:
       - name: "pull demo"
         run: echo "Pull"
+  build_and_test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Github-action-demo"
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: "Finding python"
+        run: where python
+
+      
+
 
 
