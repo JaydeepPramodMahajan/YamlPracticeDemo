@@ -1,13 +1,13 @@
 name: "First Yaml Script Dmeo Practice"
 on:
   push:
-    Branches:
+    branches:
       - master
       - main
 
 jobs:
   printing:
-    run-on: Ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
-      - step-name: "print-Hello"
+      - name: "Print Hello"
         run: echo "Hello"
