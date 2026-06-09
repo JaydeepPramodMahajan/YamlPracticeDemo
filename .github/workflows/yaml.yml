@@ -1,15 +1,16 @@
-name: "First Yaml Script Dmeo Practice"
+name: "By my self"
 on:
   push:
     branches:
+      - main 
       - master
-      - main
 
 jobs:
   printing:
     runs-on: ubuntu-latest
     steps:
-      - name: "Print Hello"
-        run: echo "Hello"
-      - name: "Creating a directory"
-        run: mkdir "Random"
+        - name: "printing on desk"
+          run: echo "Hello"
+
+
+
