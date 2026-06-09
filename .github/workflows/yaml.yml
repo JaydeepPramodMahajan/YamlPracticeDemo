@@ -4,13 +4,27 @@ on:
     branches:
       - main 
       - master
+  pull_request:
+    branches:
+      - master
+      - test
+    types:
+      - opened
+      - closed
 
 jobs:
-  printing:
+  on_push:
+    
     runs-on: ubuntu-latest
     steps:
         - name: "printing on desk"
-          run: echo "Hello"
+          run: echo "Push"
 
+  on_pull:
+    
+    runs-on: ubuntu-latest
+    steps:
+      - name: "pull demo"
+        run: echo "Pull"
 
 
