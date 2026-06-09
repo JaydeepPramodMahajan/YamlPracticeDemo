@@ -14,14 +14,14 @@ on:
 
 jobs:
   on_push:
-    
+    if: ${{ github.event_name == 'push' }}
     runs-on: ubuntu-latest
     steps:
         - name: "printing on desk"
           run: echo "Push"
 
   on_pull:
-    
+    if: ${{ github.event_name == 'pull_request' }}
     runs-on: ubuntu-latest
     steps:
       - name: "pull demo"
